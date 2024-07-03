@@ -12,7 +12,7 @@ type Config = {
 export function getConfigs(argvs: string[]) {
   const configs: Config = {
     isTest: !!process.env.JEST_WORKER_ID,
-    groupImport: false,
+    groupImport: true,
     filteredFiles: [],
     ignoredFiles: [],
     aggressiveCheck: false,
